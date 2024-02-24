@@ -21,7 +21,7 @@ class TV:
         return self._marca
     
     #Para canal 
-    def setCanal(self, canal: str) -> None:
+    def setCanal(self, canal: int) -> None:
         if (self._estado == True and (canal >= 1 and canal <= 120)):
             self._canal = canal
     
@@ -29,14 +29,14 @@ class TV:
         return self._canal
      
     #Para precio 
-    def setPrecio(self, precio: str) -> None:
+    def setPrecio(self, precio: int) -> None:
         self._precio = precio
     
     def getPrecio(self) -> int:
         return self._precio
      
     #Para volumen 
-    def setVolumen(self, volumen: str) -> None:
+    def setVolumen(self, volumen: int) -> None:
         if (self._estado == True and (volumen >= 0 and volumen <= 7)):
             self._volumen = volumen
     
@@ -44,7 +44,7 @@ class TV:
         return self._volumen
       
     #Para control
-    def setControl(self, control: str) -> None:
+    def setControl(self, control: Control) -> None:
         if isinstance(control, Control):
             self._control = control
     
