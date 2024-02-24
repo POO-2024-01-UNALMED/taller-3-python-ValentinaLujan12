@@ -53,11 +53,11 @@ class TV:
 
     #numTV
     @staticmethod
-    def setNumTv(cls, num: int) -> None:
+    def setNumTV(cls, num: int) -> None:
         TV._numTv: int = num
 
     @staticmethod
-    def getNumTv(cls) -> int:
+    def getNumTV(cls) -> int:
         return TV._numTV
     
     #Metodos de estado 
