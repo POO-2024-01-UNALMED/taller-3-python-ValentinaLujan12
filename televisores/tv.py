@@ -69,23 +69,19 @@ class TV:
 
     #Metodos de canal 
     def canalUp(self) -> None:
-        if self._estado:
-            if self._canal < 120:
-                self._canal += 1
+        if (self._estado and (self._canal >= 1 and self._canal < 120)):
+            self._canal += 1
     
     def canalDown(self) -> None:
-        if self._estado:
-            if self._canal > 1:
-                self._canal -= 1
+        if (self._estado and (self._canal > 1 and self._canal <= 120)):
+            self._canal -= 1
 
     #Metodos de volumen 
     def volumenUp(self) -> None:
-        if self._estado:
-            if self._volumen < 7:
-                self._volumen += 1
+        if (self._estado and (self._volumen >= 0 and self._volumen < 7)):
+            self._volumen += 1
     
     def volumenDown(self) -> None:
-        if self._estado:
-            if self._canal > 0:
-                self._volumen -= 1
+        if (self._estado and (self._volumen > 0 and self._volumen <= 7)):
+            self._volumen -= 1
     
