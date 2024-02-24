@@ -22,7 +22,7 @@ class TV:
     
     #Para canal 
     def setCanal(self, canal: str) -> None:
-        if (self._estado == True and (self._canal >= 1 and self._canal <= 120)):
+        if (self._estado == True and (canal >= 1 and canal <= 120)):
             self._canal = canal
     
     def getCanal(self) -> int:
@@ -37,7 +37,7 @@ class TV:
      
     #Para volumen 
     def setVolumen(self, volumen: str) -> None:
-        if (self._estado == True and (self._volumen >= 0 and self._volumen <= 7)):
+        if (self._estado == True and (volumen >= 0 and volumen <= 7)):
             self._volumen = volumen
     
     def getVolumen(self) -> int:
